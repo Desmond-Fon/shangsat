@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Aside = () => {
     return (
-        <div className='flex justify-between items-center flex-col gap-[200px] p-[80px] '>
+        <div className='flex justify-between items-center flex-col gap-[190px] p-[80px] '>
             <div className='flex justify-between items-center w-[100%] gap-10'>
                 <div className='w-[50%] relative'>
                     <img src={desktop} alt="" />

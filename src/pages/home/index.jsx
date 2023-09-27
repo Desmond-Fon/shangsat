@@ -5,6 +5,16 @@ import water from '../../assets/tablewater.png'
 import women from '../../assets/women.png'
 import man from '../../assets/storyPic.png'
 import arrow from '../../assets/arrow-right.png'
+import img1 from '../../assets/homeG1.png'
+import img2 from '../../assets/homeG2.png'
+import img3 from '../../assets/homeG3.png'
+import img4 from '../../assets/homeG4.png'
+import img5 from '../../assets/homeG5.png'
+import img6 from '../../assets/homeG6.png'
+import img7 from '../../assets/homeG7.png'
+import service1 from '../../assets/heaterServices.png'
+import service2 from '../../assets/housingService.png'
+import service3 from '../../assets/waterServices.png'
 import { Link } from 'react-router-dom'
 
 const Landing = () => {
@@ -40,25 +50,33 @@ const Landing = () => {
             </div>
         </div>
 
-        <div className='flex justify-between items-center w-[100%] bg-primary'>
-            <div className='w-[50%]'>
-                <img src={women} alt="" />
-            </div>
-            <div className='w-[50%] p-[60px] '>
-                <h2 className='font-roboto text-org font-[700] text-[20px] pb-[16px]'>SERVICES</h2>
-                <h1 className='font-anton text-white text-[50px] leading-[60px]'>Browse through our amazing services</h1>
-                <p className='text-white  font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
-                <div>
-                    <Link to={'/services'}>
-                        <button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
-                    </Link>
+        <div className='flex flex-col justify-between items-center w-[100%] gap-[8px]'>
+            <div className='flex justify-between items-center w-[100%] gap-[8px]'>
+                <div className='w-[50%]'>
+                    <img src={women} alt="" />
                 </div>
+                <div className='w-[50%] p-[60px] bg-primary'>
+                    <h2 className='font-roboto text-org font-[700] text-[20px] pb-[16px]'>SERVICES</h2>
+                    <h1 className='font-anton text-white text-[50px] leading-[60px]'>Browse through our amazing services</h1>
+                    <p className='text-white  font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    <div>
+                        <Link to={'/services'}>
+                            <button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex justify-between items-center gap-[8px] w-[100%]'>
+                <img src={service1} alt="" />
+                <img src={service2} alt="" />
+                <img src={service3} alt="" />
             </div>
         </div>
 
         <div className="p-[80px]">
-            <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center'>Here&apos; Our Story</h1>
-            <p className='text-darkText text-center font-poppins text-[18px] py-[80px]'>Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
+            <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center'>Here&apos;s Our Story</h1>
+            <p className='text-darkText text-center font-poppins text-[18px] pb-[80px] pt-[40px]'>Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
 
             <div >
                 <div className='relative'>
@@ -80,8 +98,38 @@ const Landing = () => {
             </div>
         </div>
 
-        <div className='px-[80px] pt-[80px] bg-sectionBg'>
-
+        <div className='px-[80px] pt-[80px] bg-sectionBg w-[100%] flex justify-between items-start gap-[20px] relative'>
+                <div className='absolute bottom-0 right-[480px]'>
+                    <img src={img6} alt=""  className='w-[70%]'/>
+                </div>
+            <div className='w-[40%]'>
+                <h2 className='font-roboto text-footerLink font-[700] text-[20px] pb-[16px]'>PHOTO GALLERY</h2>
+                <h1 className='font-anton text-darkText text-[50px] leading-[60px]'>Explore the world of Shangsat</h1>
+                <p className='text-darkText font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                <div>
+                    <Link to={'/gallery'}>
+                        <button className='bg-primary text-white px-[24px] font-[500] rounded-[8px] border-primary border-[2px] py-[8px] font-poppins'>View Gallery</button>
+                    </Link>
+                </div>
+            </div>
+            <div className='w-[60%] flex justify-center gap-[15px] items-center h-[100%]'>
+                <div>
+                    <img src={img3} alt="" />
+                </div>
+                <div className='w-full'>
+                    <div className='flex justify-start items-end gap-[10px] w-full h-full'>
+                        <img src={img1} alt="" className='w-[23%] h-[80%]' />
+                        <img src={img2} alt="" className='w-[75%] h-[100%] object-contain' />
+                    </div>
+                    <div className=' w-full'>
+                        <img src={img4} alt="" className=' ml-[-22px] w-full' />
+                    </div>
+                    <div className='mt-[-28px] flex gap-[8px]'>
+                        <img src={img5} alt="" className='w-[30%]'/>
+                        <img src={img7} alt="" className='w-[70%]'/>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>);

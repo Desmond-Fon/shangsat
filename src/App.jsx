@@ -14,9 +14,9 @@ import Aside from './components/Aside';
 function App() {
 
   return (
-      <div className=''>
-        <BrowserRouter>
+    <BrowserRouter>
         <Nav />
+      <div className='overflow-x-hidden'>
         <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/gallery" element={<Gallery />} />
@@ -26,9 +26,9 @@ function App() {
         </Routes>
         <Aside />
         <Section />
+      </div>
         <Footer />
         </BrowserRouter>
-      </div>
   )
 }
 
