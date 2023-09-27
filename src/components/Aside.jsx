@@ -18,7 +18,7 @@ const Aside = () => {
                     <p className='text-darkText font-poppins text-[18px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                     <div>
                         <Link to={'/contact'}>
-                            <button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins'>Contact Us</button>
+                            <button className='bg-secondary text-[22px] text-white px-[28px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins'>Contact Us</button>
                         </Link>
                     </div>
                 </div>

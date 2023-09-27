@@ -16,6 +16,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         anton: ["Anton", "sans-serif"],
       },
+      backgroundImage: {
+        homeBg: './src/assets/homeBg.png',
+        secBg: './src/assets/sectionBg.png'
+      }
     },
   },
   plugins: [],

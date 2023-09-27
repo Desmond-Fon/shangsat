@@ -15,13 +15,49 @@ import img7 from '../../assets/homeG7.png'
 import service1 from '../../assets/heaterServices.png'
 import service2 from '../../assets/housingService.png'
 import service3 from '../../assets/waterServices.png'
+import topBar from '../../assets/Top Bar.png'
+import playCircle from '../../assets/playCircle.png'
+import play from '../../assets/play.png'
 import { Link } from 'react-router-dom'
+import { useState, useRef } from 'react'
+
+
 
 const Landing = () => {
+    const [playing, setPlaying] = useState(false);
+
+    const iframeRef = useRef();
+
+    const handlePlay = () => {
+        // iframeRef.current.playVideo();
+        setPlaying(!playing);
+        iframeRef.current.playVideo()
+    };
+
     return (<div>
-        <div className="px-[80px] pt-[80px] py-[100px]">
+        <div className="px-[80px] pt-[80px] py-[70px]">
             <h1 className='font-anton text-darkText text-[72px] leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
             <p className='text-dakrText font-poppins text-[18px] p-[32px] text-center'> Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br /> Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
+        </div>
+
+        <div className='homeBg px-[170px] pb-[40px] pt-[70px]'>
+            <div className='h-[630px] w-[100%] border-primary border-[4px] rounded-[20px] bg-white'>
+                <img src={topBar} alt="" className='h-[6%] w-full' />
+                <div className='relative h-[100%]'>
+                    <iframe width="100%" height="94%" className='rounded-b-[16px]' src="https://www.youtube.com/embed/rYx272cOHnk" aria-controls='false' title="YouTube video player" 
+                        allowfullscreen ref={iframeRef} />
+                    <div className={`${playing ? 'hidden' : 'absolute'} top-[34%] left-[41%] cursor-pointer`} onClick={handlePlay}>
+                        <img src={playCircle} alt="" />
+                    </div>
+                </div>
+            </div>
+
+           <div className='flex justify-center items-center mt-4'>
+                <button className='bg-secondary font-poppins text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] flex justify-center items-center' onClick={handlePlay}>
+                    <img src={play} alt="" />
+                    <p>Watch Video</p>
+                </button>
+           </div>
         </div>
 
         <div className="p-[80px]">
@@ -61,7 +97,7 @@ const Landing = () => {
                     <p className='text-white  font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                     <div>
                         <Link to={'/services'}>
-                            <button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
+                            <button className='bg-secondary text-white text-[22px] px-[28px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
                         </Link>
                     </div>
                 </div>
@@ -99,16 +135,16 @@ const Landing = () => {
         </div>
 
         <div className='px-[80px] pt-[80px] bg-sectionBg w-[100%] flex justify-between items-start gap-[20px] relative'>
-                <div className='absolute bottom-0 right-[480px]'>
-                    <img src={img6} alt=""  className='w-[70%]'/>
-                </div>
+            <div className='absolute bottom-0 right-[480px]'>
+                <img src={img6} alt="" className='w-[70%]' />
+            </div>
             <div className='w-[40%]'>
                 <h2 className='font-roboto text-footerLink font-[700] text-[20px] pb-[16px]'>PHOTO GALLERY</h2>
                 <h1 className='font-anton text-darkText text-[50px] leading-[60px]'>Explore the world of Shangsat</h1>
                 <p className='text-darkText font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                 <div>
                     <Link to={'/gallery'}>
-                        <button className='bg-primary text-white px-[24px] font-[500] rounded-[8px] border-primary border-[2px] py-[8px] font-poppins'>View Gallery</button>
+                        <button className='bg-primary text-white text-[22px] px-[28px] font-[500] rounded-[8px] border-primary border-[2px] py-[8px] font-poppins'>View Gallery</button>
                     </Link>
                 </div>
             </div>
@@ -125,8 +161,8 @@ const Landing = () => {
                         <img src={img4} alt="" className=' ml-[-22px] w-full' />
                     </div>
                     <div className='mt-[-28px] flex gap-[8px]'>
-                        <img src={img5} alt="" className='w-[30%]'/>
-                        <img src={img7} alt="" className='w-[70%]'/>
+                        <img src={img5} alt="" className='w-[30%]' />
+                        <img src={img7} alt="" className='w-[70%]' />
                     </div>
                 </div>
             </div>
