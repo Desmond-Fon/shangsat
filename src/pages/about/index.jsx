@@ -8,7 +8,7 @@ const Story = () => {
             <p className='text-darkText font-poppins text-[18px] p-[32px] text-center'>Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
         </div>
 
-        <div className='px-[80px] pb-[150px]'>
+        <div className='px-[80px] pb-[100px]'>
             <div className='flex justify-between items-center gap-[25px] pb-[80px]'>
                 <div className='w-[50%] h-[100%]'>
                     <img src={man} alt="" />

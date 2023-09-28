@@ -1,7 +1,3 @@
-// import rice from '../../assets/ricemill.png'
-// import housing from '../../assets/housing.png'
-// import solar from '../../assets/waterheater.png'
-// import water from '../../assets/tablewater.png'
 import women from '../../assets/women.png'
 import man from '../../assets/storyPic.png'
 import arrow from '../../assets/arrow-right.png'
@@ -61,42 +57,17 @@ const Landing = () => {
            </div>
         </div>
 
-        {/* <div className="p-[80px]">
-            <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center mb-[70px]'>Our Expertise</h1>
-            <div className='flex items-center justify-between gap-[64px]'>
-                <div className='flex flex-col items-center justify-center gap-[16px]'>
-                    <img src={rice} alt="" />
-                    <h1 className='text-darkText text-[20px] font-anton'>Rice Milling</h1>
-                    <p className='font-poppins text-center text-darkText'>Pellentesque quis tincidunt sit sed. Tortor massa sed habitant.</p>
-                </div>
-                <div className='flex flex-col items-center justify-center gap-[16px]'>
-                    <img src={housing} alt="" />
-                    <h1 className='text-darkText text-[20px] font-anton'>Housing</h1>
-                    <p className='font-poppins text-center text-darkText'>Eget sed nunc, amet, nibh nulla. Morbi sed risus ullamcorper diam.</p>
-                </div>
-                <div className='flex flex-col items-center justify-center gap-[16px]'>
-                    <img src={solar} alt="" />
-                    <h1 className='text-darkText text-[20px] font-anton'>Solar Water Heater</h1>
-                    <p className='font-poppins text-center text-darkText'>Euismod sed nibh nulla ut elementum.</p>
-                </div>
-                <div className='flex flex-col items-center justify-center gap-[16px]'>
-                    <img src={water} alt="" />
-                    <h1 className='text-darkText text-[20px] font-anton'>Table Water Production</h1>
-                    <p className='font-poppins text-center text-darkText'>Quam sed neque vitae viverra purus venenatis ac.</p>
-                </div>
-            </div>
-        </div> */}
         <Expertise text={'Our Expertise'} />
 
         <div className='flex flex-col justify-between items-center w-[100%] gap-[8px]'>
-            <div className='flex justify-between items-center w-[100%] gap-[8px]'>
-                <div className='w-[50%]'>
-                    <img src={women} alt="" />
+            <div className='flex justify-between items-center w-[100%] gap-[8px] h-[400px]'>
+                <div className='w-[50%] h-[100%]'>
+                    <img src={women} alt="" className='h-[100%] w-[100%] object-cover' />
                 </div>
-                <div className='w-[50%] p-[60px] bg-primary'>
-                    <h2 className='font-roboto text-org font-[700] text-[20px] pb-[16px]'>SERVICES</h2>
+                <div className='w-[50%] h-[100%] px-[60px] flex justify-between flex-col bg-primary py-[30px]'>
+                    <h2 className='font-roboto text-org font-[700] text-[20px] '>SERVICES</h2>
                     <h1 className='font-anton text-white text-[50px] leading-[60px]'>Browse through our amazing services</h1>
-                    <p className='text-white  font-poppins text-[18px] py-[32px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    <p className='text-white  font-poppins text-[18px]'>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                     <div>
                         <Link to={'/services'}>
                             <button className='bg-secondary text-white text-[22px] px-[28px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
@@ -137,7 +108,7 @@ const Landing = () => {
         </div>
 
         <div className='px-[80px] pt-[80px] bg-sectionBg w-[100%] flex justify-between items-start gap-[20px] relative'>
-            <div className='absolute bottom-0 right-[480px]'>
+            <div className='absolute bottom-0 lg:right-[480px] xl:right-[575px]'>
                 <img src={img6} alt="" className='w-[70%]' />
             </div>
             <div className='w-[40%]'>
@@ -160,7 +131,7 @@ const Landing = () => {
                         <img src={img2} alt="" className='w-[75%] h-[100%] object-contain' />
                     </div>
                     <div className=' w-full'>
-                        <img src={img4} alt="" className=' ml-[-22px] w-full' />
+                        <img src={img4} alt="" className=' ml-[-22px] w-full h-[100%]object-cover' />
                     </div>
                     <div className='mt-[-28px] flex gap-[8px]'>
                         <img src={img5} alt="" className='w-[30%]' />
