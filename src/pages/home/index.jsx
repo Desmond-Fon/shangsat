@@ -1,7 +1,7 @@
-import rice from '../../assets/ricemill.png'
-import housing from '../../assets/housing.png'
-import solar from '../../assets/waterheater.png'
-import water from '../../assets/tablewater.png'
+// import rice from '../../assets/ricemill.png'
+// import housing from '../../assets/housing.png'
+// import solar from '../../assets/waterheater.png'
+// import water from '../../assets/tablewater.png'
 import women from '../../assets/women.png'
 import man from '../../assets/storyPic.png'
 import arrow from '../../assets/arrow-right.png'
@@ -20,6 +20,7 @@ import playCircle from '../../assets/playCircle.png'
 import play from '../../assets/play.png'
 import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
+import Expertise from '../../components/Expertise'
 
 
 
@@ -37,7 +38,7 @@ const Landing = () => {
     return (<div>
         <div className="px-[80px] pt-[80px] py-[70px]">
             <h1 className='font-anton text-darkText text-[72px] leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
-            <p className='text-dakrText font-poppins text-[18px] p-[32px] text-center'> Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br /> Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
+            <p className='text-darkText font-poppins text-[18px] p-[32px] text-center'> Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br /> Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
         </div>
 
         <div className='homeBg px-[170px] pb-[40px] pt-[70px]'>
@@ -60,7 +61,7 @@ const Landing = () => {
            </div>
         </div>
 
-        <div className="p-[80px]">
+        {/* <div className="p-[80px]">
             <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center mb-[70px]'>Our Expertise</h1>
             <div className='flex items-center justify-between gap-[64px]'>
                 <div className='flex flex-col items-center justify-center gap-[16px]'>
@@ -84,7 +85,8 @@ const Landing = () => {
                     <p className='font-poppins text-center text-darkText'>Quam sed neque vitae viverra purus venenatis ac.</p>
                 </div>
             </div>
-        </div>
+        </div> */}
+        <Expertise text={'Our Expertise'} />
 
         <div className='flex flex-col justify-between items-center w-[100%] gap-[8px]'>
             <div className='flex justify-between items-center w-[100%] gap-[8px]'>
