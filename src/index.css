@@ -36,6 +36,7 @@
     url("./assets/heaterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
+transition: transform .8s;
 }
 
 .background2 {
@@ -47,6 +48,7 @@
     url("./assets/housingService.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
+transition: transform .8s;
 }
 
 .background3 {
@@ -58,6 +60,7 @@
     url("./assets/heaterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
+transition: transform .8s;
 }
 
 .background4 {
@@ -69,4 +72,9 @@
     url("./assets/waterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
+transition: transform .8s;
+}
+
+.background1:hover, .background2:hover, .background3:hover, .background4:hover{
+    transform:scale(1.04);
 }

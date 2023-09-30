@@ -10,6 +10,7 @@ export default {
         footerLink: "#475569",
         darkText: "#0F172A",
         org: "#FF8D41",
+        grn: "#26A04F",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
@@ -17,9 +18,9 @@ export default {
         anton: ["Anton", "sans-serif"],
       },
       backgroundImage: {
-        homeBg: './src/assets/homeBg.png',
-        secBg: './src/assets/sectionBg.png'
-      }
+        homeBg: "./src/assets/homeBg.png",
+        secBg: "./src/assets/sectionBg.png",
+      },
     },
   },
   plugins: [],
