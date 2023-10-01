@@ -6,9 +6,9 @@ import water from '../assets/tablewater.png'
 // eslint-disable-next-line react/prop-types
 const Expertise = ({text}) => {
     return ( <>
-        <div className="p-[80px]">
-            <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center mb-[70px]'>{text}</h1>
-            <div className='flex items-center justify-between gap-[64px]'>
+        <div className="p-[16px] py-[48px] lg:p-[80px]">
+            <h1 className='font-anton text-darkText text-[50px] leading-[60px] text-center mb-[70px] hidden lg:block'>{text}</h1>
+            <div className='flex items-center flex-col lg:flex-row justify-between gap-[32px] lg:gap-[60px]'>
                 <div className='flex flex-col items-center justify-center gap-[16px]'>
                     <img src={rice} alt="" />
                     <h1 className='text-darkText text-[20px] font-anton'>Rice Milling</h1>

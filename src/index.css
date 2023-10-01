@@ -78,3 +78,13 @@ transition: transform .8s;
 .background1:hover, .background2:hover, .background3:hover, .background4:hover{
     transform:scale(1.04);
 }
+
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+  .homeBg {
+  background-image: url("./assets/homeBg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+}
