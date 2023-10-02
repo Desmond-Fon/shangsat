@@ -33,7 +33,7 @@ const Landing = () => {
     };
 
     return (<div>
-        <div className="px-[16px] pt-[48px]  lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
+        <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
             <h1 className='font-anton text-darkText text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] lg:p-[32px] text-center'> Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. <br /> Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
 
@@ -43,15 +43,15 @@ const Landing = () => {
             </div>
         </div>
 
-        <div className='homeBg px-[32px] lg:px-[170px] pb-[40px] pt-[24px] lg:pt-[70px]'>
-            <div className='h-[240px] lg:h-[630px] w-[100%] border-primary border-[4px] rounded-[20px] bg-white'>
+        <div className='homeBg px-[32px] md:px-[48px] lg:px-[170px] pb-[40px] pt-[24px] lg:pt-[70px]'>
+            <div className='h-[240px] md:h-[430px] lg:h-[630px] w-[100%] border-primary border-[4px] rounded-[20px] bg-white'>
                 <img src={topBar} alt="" className='h-[6%] w-full' />
                 <div className='relative h-[100%]'>
                     {playing ? <iframe width="100%" height="94%" className='rounded-b-[16px]' src="https://www.youtube.com/embed/rYx272cOHnk" aria-controls='false' title="YouTube video player"
                         allowfullscreen ref={iframeRef} autoPlay="true" /> :
                         <img src={man} alt="" width="100%" height="100%" className='rounded-b-[16px] object-cover h-[94%]' />}
-                    <div className={`${playing ? 'hidden' : 'absolute'} top-[34%] left-[41%] cursor-pointer`} onClick={handlePlay}>
-                        <img src={playCircle} alt="" className='w-[50px] lg:w-[100%]' />
+                    <div className={`${playing ? 'hidden' : 'absolute'} top-[34%] left-[41%] md:left-[45%] lg:left-[41%] cursor-pointer`} onClick={handlePlay}>
+                        <img src={playCircle} alt="" className='w-[50px] md:w-[70px] lg:w-[100%]' />
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center gap-[8px] w-[100%] h-[65px] lg:h-[200px]'>
+            <div className='flex justify-between items-center gap-[8px] w-[100%] h-[65px] md:h-[120px] lg:h-[200px]'>
                 <img src={service1} alt="" className='w-[33%] h-[100%] object-[cover]' />
                 <img src={service2} alt="" className='w-[33%] h-[100%] object-[cover]' />
                 <img src={service3} alt="" className='w-[33%] h-[100%] object-[cover]' />
@@ -94,12 +94,12 @@ const Landing = () => {
             <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] lg:leading-[35px] leading-[60px] text-center'>Here&apos;s Our Story</h1>
             <p className='text-darkText text-center font-poppins text-[14px] lg:text-[18px] lg:pb-[80px] pb-[32px]  pt-[28px] lg:pt-[40px]'>Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
 
-            <div className='mb-[180px] lg:mb-0' >
+            <div className='mb-[180px] px-0 lg:px-0 md:px-[52px] lg:mb-0' >
                 <div className='relative'>
-                    <div className='w-[100%] lg:w-[55%]'>
+                    <div className='w-[100%] lg:w-[55%] flex justify-center items-center lg:block'>
                         <img src={man} alt="" />
                     </div>
-                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[48px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[185px] lg:top-[60px] left-[5%] lg:left-[48%] lg:right-0'>
+                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[48px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[185px] md:top-[340px] lg:top-[60px] left-[5%] lg:left-[48%] lg:right-0'>
                         <p className='font-poppins text-[14px] lg:text-[16px]'>
                             Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. <span className='hidden lg:inline'> Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</span>
                         </p>

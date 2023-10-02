@@ -7,8 +7,8 @@ const Aside = () => {
         <div className='flex justify-between items-center flex-col gap-[80px] lg:gap-[190px] lg:p-[80px] pt-[48px] p-[16px] pb-[48px]'>
             <div className='flex justify-between items-center w-[100%] gap-10 flex-col lg:flex-row'>
                 <div className='w-[100%] h-[100%] lg:w-[50%] flex justify-center items-center lg:block relative'>
-                    <img src={desktop} alt="" className='w-[90%] h-[100%] object-cover' />
-                    <div className='absolute top-4 left-[130px] lg:top-7 lg:left-[185px]'>
+                    <img src={desktop} alt="" className='w-[90%] md:w-[70%] lg:w-full h-[100%] object-cover' />
+                    <div className='absolute top-4 left-[130px] md:left-[300px] md:top-7 lg:top-7 lg:left-[185px]'>
                         <img src={pointer} alt="" />
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Aside = () => {
 
             <div className='flex justify-center items-center flex-col'>
                 <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] text-center mb-[30px]'>Stay Informed with Our Newsletter</h1>
-                <p className='text-darkText font-poppins text-[18px] mb-[30px]'>Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
+                <p className='text-darkText font-poppins text-[18px] mb-[30px] text-center lg:text-left'>Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
                 <div>
                     <div className='relative'>
                         <input type="email" placeholder='Enter email address' className='w-[300px] lg:w-[450px] h-[52px] border-[2px] border-primary rounded-[8px] px-4 font-poppins text-[14px] outline-primary'/>
