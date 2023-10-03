@@ -88,3 +88,27 @@ transition: transform .8s;
   background-size: contain;
 }
 }
+
+.hamburger-menu {
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    /* background-color: #333; */
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
