@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full bg-footerLink h-[1px] my-[48px]"></div>
-        <div className="flex flex-col lg:flex-row justify-between items-center py-[24px] font-poppins text-footerLink gap-5 lg:gap-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center py-[24px] font-poppins text-footerLink gap-5 lg:gap-0 pb-[48px]">
             <p className="text-center lg:text-left">All rights reserved @ ShangsatNigeriaLtd 2023.</p>
             <div className='flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-[48px]'>
                 
