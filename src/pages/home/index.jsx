@@ -18,7 +18,8 @@ import whiteArrow from '../../assets/arrow-right-white.svg'
 import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
 import Expertise from '../../components/Expertise'
-
+import Medal from '../../components/Medal'
+import Team from '../../components/Team'
 
 
 const Landing = () => {
@@ -114,6 +115,8 @@ const Landing = () => {
             </div>
         </div>
 
+        <Medal />
+
         <div className='lg:px-[80px] pt-[80px] bg-sectionBg w-[100%] flex justify-between flex-col lg:flex-row items-start gap-[20px] relative'>
             <div className='absolute bottom-0 lg:right-[480px] xl:right-[355px]'>
                 <img src={img6} alt="" className='w-[50%] hidden lg:block' />
@@ -147,6 +150,8 @@ const Landing = () => {
                 </div>
             </div>
         </div>
+
+        <Team />
 
     </div>);
 }

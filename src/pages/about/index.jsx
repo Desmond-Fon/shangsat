@@ -1,5 +1,7 @@
 import man from '../../assets/storyPic.png'
 import Expertise from '../../components/Expertise';
+import Team from '../../components/Team';
+import Medal from '../../components/Medal'
 
 const Story = () => {
     return ( <>
@@ -26,6 +28,9 @@ const Story = () => {
         </div>
 
         <Expertise text={'Our Expertise'} />
+
+        <Medal />
+        <Team />
     </> );
 }
  
