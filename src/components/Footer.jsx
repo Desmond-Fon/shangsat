@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-[48px] lg:gap-[24px] w-[100%]">
             <div className='flex flex-col item-center justify-center lg:justify-start gap-[24px] w-full lg:w-[50%]'>
                 <div className='flex justify-center items-center lg:justify-start'>
-                    <img src={logo} alt="" className='w-[40%] lg:w-[20%]' />
+                    <img src={logo} alt="" className='w-[40%] md:w-[20%] lg:w-[20%]' />
                 </div>
                 <p className='font-poppins text-center lg:text-left text-darkText text-[14px]'>
                     We are helping organizations and individuals, to address all aspects of their procurements and sourcing operations to achieve and meet the standards of the modern world economy, saving more and improving business growth.
