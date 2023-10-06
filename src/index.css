@@ -15,7 +15,7 @@
     0px 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
- input:focus {
+input:focus {
   border-bottom: 1px solid black;
   color: black;
 }
@@ -45,7 +45,7 @@
     url("./assets/heaterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-transition: transform .8s;
+  transition: transform 0.8s;
 }
 
 .background2 {
@@ -57,7 +57,7 @@ transition: transform .8s;
     url("./assets/housingService.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-transition: transform .8s;
+  transition: transform 0.8s;
 }
 
 .background3 {
@@ -69,7 +69,7 @@ transition: transform .8s;
     url("./assets/heaterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-transition: transform .8s;
+  transition: transform 0.8s;
 }
 
 .background4 {
@@ -81,47 +81,57 @@ transition: transform .8s;
     url("./assets/waterServices.png"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-transition: transform .8s;
+  transition: transform 0.8s;
 }
 
-.background1:hover, .background2:hover, .background3:hover, .background4:hover{
-    transform:scale(1.04);
+.background1:hover,
+.background2:hover,
+.background3:hover,
+.background4:hover {
+  transform: scale(1.04);
 }
 
 .boxShad {
   box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
 }
 
-
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
   .homeBg {
-  background-image: url("./assets/homeBg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+    background-image: url("./assets/homeBg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .hamburger-menu {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 
-  .line {
-    width: 30px;
-    height: 3px;
-    /* background-color: #333; */
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+.line {
+  width: 30px;
+  height: 3px;
+  /* background-color: #333; */
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-  .hamburger-menu.open .line:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
+.hamburger-menu.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-  .hamburger-menu.open .line:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger-menu.open .line:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger-menu.open .line:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+.hamburger-menu.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navLine {
+  background: linear-gradient(270deg, #4543a0 0%, rgba(69, 67, 160, 0) 100%);
+}
+
+.activeNav {
+  box-shadow: -10px 1px 30px 0px rgba(0, 0, 0, 0.5);
+}
