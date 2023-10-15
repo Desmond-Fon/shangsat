@@ -9,26 +9,28 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 import Contact from './pages/contact';
 import Aside from './components/Aside';
+import Pricing from './pages/pricing';
 
 
 function App() {
 
   return (
     <BrowserRouter>
-        <Nav />
+      <Nav />
       <div className='overflow-x-hidden'>
         <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<Story />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<Story />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
         <Aside />
         <Section />
       </div>
-        <Footer />
-        </BrowserRouter>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

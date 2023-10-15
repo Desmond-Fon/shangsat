@@ -1,13 +1,13 @@
 import women from '../../assets/women.png'
 import man from '../../assets/storyPic.png'
 import arrow from '../../assets/arrow-right.png'
-import img1 from '../../assets/homeG1.png'
-import img2 from '../../assets/homeG2.png'
-import img3 from '../../assets/homeG3.png'
-import img4 from '../../assets/homeG4.png'
-import img5 from '../../assets/homeG5.png'
-import img6 from '../../assets/homeG6.png'
-import img7 from '../../assets/homeG7.png'
+// import img1 from '../../assets/homeG1.png'
+// import img2 from '../../assets/homeG2.png'
+// import img3 from '../../assets/homeG3.png'
+// import img4 from '../../assets/homeG4.png'
+// import img5 from '../../assets/homeG5.png'
+// import img6 from '../../assets/homeG6.png'
+// import img7 from '../../assets/homeG7.png'
 import service1 from '../../assets/heaterServices.png'
 import service2 from '../../assets/housingService.png'
 import service3 from '../../assets/waterServices.png'
@@ -118,9 +118,6 @@ const Landing = () => {
         <Medal />
 
         <div className='lg:px-[80px] pt-[80px] bg-sectionBg w-[100%] flex justify-between flex-col lg:flex-row items-start gap-[20px] relative'>
-            {/* <div className='absolute bottom-0 lg:right-[480px] xl:right-[355px]'>
-                <img src={img6} alt="" className='w-[50%] hidden lg:block' />
-            </div> */}
             <div className='lg:w-[40%] px-[16px] lg:px-0 flex justify-center items-center lg:block flex-col'>
                 <h2 className='font-roboto text-footerLink font-[700] text-[20px] pb-[16px] text-center lg:text-left'>PHOTO GALLERY</h2>
                 <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] leading-[32px] lg:leading-[60px]  text-center lg:text-left'>Explore the world of Shangsat</h1>
@@ -131,24 +128,6 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            {/* <div className='lg:w-[60%] flex justify-between lg:justify-center gap-[15px] items-center h-[400px] lg:h-[100%]'>
-                <div className='w-[35%]'>
-                    <img src={img3} alt="" />
-                </div>
-                <div className=''>
-                    <div className='flex justify-betweenlg:justify-start items-end gap-[10px] w-full h-full'>
-                        <img src={img1} alt="" className='w-[30%] lg:w-[23%] lg:h-[80%] object-contain' />
-                        <img src={img2} alt="" className='w-[100%] lg:w-[75%] h-[100%] lg:object-contain' />
-                    </div>
-                    <div className=' w-full'>
-                        <img src={img4} alt="" className='ml-[-14px] lg:ml-[-22px] w-full h-[100%] object-cover' />
-                    </div>
-                    <div className='lg:mt-[-28px] flex gap-[8px]'>
-                        <img src={img5} alt="" className='w-[30%]' />
-                        <img src={img7} alt="" className='w-[70%]' />
-                    </div>
-                </div>
-            </div> */}
 
             <div className='lg:w-[60%] flex justify-center items-center mx-auto'>
                 <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
@@ -185,17 +164,7 @@ const Landing = () => {
                             <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
                         </div>
                     </div>
-                    {/* <div class="grid gap-4">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-                        </div>
-                    </div> */}
+
                 </div>
             </div>
 
