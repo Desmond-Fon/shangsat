@@ -46,7 +46,7 @@ const Footer = () => {
             <div className='flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-[48px]'>
                 
                 <div className='flex justify-between items-center gap-[16px]'>
-                    <img src={meta} alt="" />
+                    <a href="https://www.facebook.com/profile.php?id=100064006633921&mibextid=2JQ9oc" target='_blank' rel='noreferrer'><img src={meta} alt="" /></a>
                     <img src={instagram} alt="" />
                     <img src={x} alt="" />
                 </div>

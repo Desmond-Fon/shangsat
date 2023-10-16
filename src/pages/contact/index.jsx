@@ -41,7 +41,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='flex justify-start items-center gap-[24px] z-20'>
-                        <img src={contactMeta} alt="" />
+                        <a href="https://www.facebook.com/profile.php?id=100064006633921&mibextid=2JQ9oc" target='_blank' rel='noreferrer'><img src={contactMeta} alt="" /></a> 
                         <img src={contactInsta} alt="" />
                         <img src={contactX} alt="" />
                     </div>
