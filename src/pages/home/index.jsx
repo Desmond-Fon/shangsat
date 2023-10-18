@@ -33,8 +33,10 @@ const Landing = () => {
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[12px] p-[16px] lg:p-[32px] text-center'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
 
             <div className='lg:hidden flex justify-center items-center p-[16px]'>
-                <button className='bg-secondary text-white px-[24px] font-[500] font-poppins rounded-[8px] border-secondary border-[2px] py-[8px] flex justify-center items-center gap-3'>Join The Community <img src={whiteArrow} alt="" />
-                </button>
+                <a href="#community">
+                    <button className='bg-secondary text-white px-[24px] font-[500] font-poppins rounded-[8px] border-secondary border-[2px] py-[8px] flex justify-center items-center gap-3'>Join The Community <img src={whiteArrow} alt="" />
+                    </button>
+                </a>
             </div>
         </div>
 

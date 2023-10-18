@@ -85,7 +85,7 @@ const Nav = () => {
             </NavLink>
         </div>
         <div className='hidden lg:block'>
-            <button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px]'>Join The Community</button>
+            <a href="#community"><button className='bg-secondary text-white px-[24px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px]'>Join The Community</button></a>
         </div>
     </div>);
 }

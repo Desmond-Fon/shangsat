@@ -24,7 +24,7 @@ const Aside = () => {
                 </div>
             </div>
 
-            <div className='flex justify-center items-center flex-col'>
+            <div className='flex justify-center items-center flex-col' id="community">
                 <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] text-center mb-[30px]'>Stay Informed with Our Newsletter</h1>
                 <p className='text-darkText font-poppins text-[18px] mb-[30px] text-center lg:text-left'>Stay up to date with our latest products and services by submitting your email address.</p>
                 <div>
