@@ -65,8 +65,8 @@ const Nav = () => {
             </div>
         </div>
         <div className='lg:flex justify-center items-center gap-7 hidden'>
-            <NavLink style={navLinkStyle} to={'/'}>
-                Home
+            <NavLink style={navLinkStyle} to={'/'} className=''>
+                <Link to={'/'}>Home</Link>
             </NavLink>
             <NavLink style={navLinkStyle} to={'/about'}>
                 About Us

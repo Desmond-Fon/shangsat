@@ -5,9 +5,9 @@ import Medal from '../../components/Medal'
 
 const Story = () => {
     return ( <>
-        <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
+        <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px] pb-10 lg:pb-3">
             <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] leading-[35px] lg:leading-[60px] text-center'>Here&apos;s Our Story</h1>
-            <p className='text-darkText font-poppins text-[14px] lg:text-[18px] px-[16px] py-[32px] lg:p-[32px] text-center'>Aliquet sed nulla tincidunt pulvinar sed fames sit facilisis dictumst. Ornare faucibus quis velit fringilla aliquam ultricies. Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Sed ut vestibulum eget purus ornare. Risus elit et fringilla habitant ut facilisi.</p>
+            <p className='text-darkText font-poppins text-[14px] lg:text-[18px] px-[16px] py-[32px] lg:p-[32px] text-center hidden lg:block'>We are a brand that celebrates diversity, inclusivity, and the power of community. We believe in bringing people together, bridging gaps, and creating shared experiences through our offerings. We are passionate about quality, integrity and authenticity.</p>
         </div>
 
         <div className='px-[16px] lg:px-[80px] pb-[50px] lg:pb-[100px]'>
@@ -17,13 +17,13 @@ const Story = () => {
                 </div>
                 <div className='w-full lg:w-[50%] text-center lg:text-left'>
                     <p className='text-darkText text-[14px] lg:text-[18px] font-poppins'>
-                        Lorem ipsum dolor sit amet consectetur. Lacus in aliquet egestas aliquam in placerat. Quis nisi platea purus magna risus malesuada risus lorem. Felis nulla adipiscing enim enim nisl. Sit a adipiscing id molestie eu elit feugiat sit nunc. Laoreet fusce felis vel scelerisque. A malesuada consectetur aliquam quis sit. Orci in velit amet neque ullamcorper facilisi accumsan. Ullamcorper convallis viverra enim mauris non bibendum neque diam. Pulvinar tincidunt curabitur tempor pharetra. Ullamcorper cursus ut quis dignissim feugiat. Porttitor sed sapien hendrerit ac ipsum egestas turpis magna suscipit. Congue malesuada eget turpis quisque bibendum. Id amet interdum faucibus tristique tellus cras elementum id. Urna ullamcorper imperdiet habitant vehicula consequat maecenas praesent fringilla. Mattis sed
+                        Our name comes from Shangsat CEOs paternal grandmother&apos;s name meaning &apos;lovely to talk about&apos; in the mwaghavul language in Jos, Plateau state (Mangu LGA). With &apos;Shang&apos; meaning &apos;lovely&apos; and &apos;sat&apos; meaning &apos;to talk about&apos;. We are a brand that celebrates diversity, inclusivity, and the power of community. We believe in bringing people together, bridging gaps, and creating shared experiences through our offerings. We are passionate about quality, integrity and authenticity. Shangsat believes in continuous growth and expansion. We aim to achieve continuous growth and expand our presence in the Nigerian trade market. Our intention is to explore new opportunities, diversify our portfolio, and establish ourselves as a leading brand known for excellence, reliability, and innovation in the industry.
                     </p>
                 </div>
             </div>
 
             <p className='text-darkText font-poppins text-[14px] lg:text-[18px] text-center lg:text-left'>
-                Lorem ipsum dolor sit amet consectetur. Lacus in aliquet egestas aliquam in placerat. Quis nisi platea purus magna risus malesuada risus lorem. Felis nulla adipiscing enim enim nisl. Sit a adipiscing id molestie eu elit feugiat sit nunc. Laoreet fusce felis vel scelerisque. A malesuada consectetur aliquam quis sit. Orci in velit amet neque ullamcorper facilisi accumsan. Ullamcorper convallis viverra enim mauris non bibendum neque diam. Pulvinar tincidunt curabitur tempor pharetra. Ullamcorper cursus ut quis dignissim feugiat. Porttitor sed sapien hendrerit ac ipsum egestas turpis magna suscipit. Congue malesuada eget turpis quisque bibendum. Id amet interdum faucibus tristique tellus cras elementum id. Urna ullamcorper imperdiet habitant vehicula consequat maecenas praesent fringilla. Mattis sed
+                We aim to build trust and credibility with our stakeholders, including customers, partners, and investors, by maintaining honesty, fairness, and accountability in every aspect of our business. An additional reason behind our name &apos;Shangsat&apos; goes back to our early days when we visited &apos;Shanghai&apos; which we discovered means &apos;Business world&apos;. Digging further, we saw that the Shang (上) character of the Chinese language means “UP” which we translated to mean going to the next level. We are determined to embrace new innovation, grow and expand our reach. We desire to better serve our customers while proudly representing our heritage.
             </p>
         </div>
 
