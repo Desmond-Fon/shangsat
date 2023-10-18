@@ -1,13 +1,6 @@
 import women from '../../assets/women.png'
 import man from '../../assets/storyPic.png'
 import arrow from '../../assets/arrow-right.png'
-// import img1 from '../../assets/homeG1.png'
-// import img2 from '../../assets/homeG2.png'
-// import img3 from '../../assets/homeG3.png'
-// import img4 from '../../assets/homeG4.png'
-// import img5 from '../../assets/homeG5.png'
-// import img6 from '../../assets/homeG6.png'
-// import img7 from '../../assets/homeG7.png'
 import service1 from '../../assets/heaterServices.png'
 import service2 from '../../assets/housingService.png'
 import service3 from '../../assets/waterServices.png'
@@ -37,7 +30,7 @@ const Landing = () => {
         <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
             <h1 className='font-anton text-darkText text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] pb-0 lg:p-[32px] lg:pb-0 text-center'> Welcome to Shangsat Nigeria, where quality, sustainability, and comfort come together in perfect harmony. We&apos;re a commitment to enhancing your everyday life.</p>
-            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] lg:p-[32px] text-center'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
+            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[12px] p-[16px] lg:p-[32px] text-center'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
 
             <div className='lg:hidden flex justify-center items-center p-[16px]'>
                 <button className='bg-secondary text-white px-[24px] font-[500] font-poppins rounded-[8px] border-secondary border-[2px] py-[8px] flex justify-center items-center gap-3'>Join The Community <img src={whiteArrow} alt="" />

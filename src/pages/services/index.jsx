@@ -9,7 +9,7 @@ const Services = () => {
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] pb-0 lg:p-[32px] lg:pb-0 text-center'>
                 At Shangsat, our vision is to enhance your life through products and services that prioritize quality, sustainability, and your overall well-being. Whether it&apos;s the rice on your plate, the warm shower you take, the water you drink, or the space you stay in, our brand is dedicated to making every moment a cherished memory.
                 </p>
-            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] lg:p-[32px] text-center'>Join us in this journey of excellence, sustainability, and comfort. We invite you to experience the Shangsat difference - where every product and service is a testament to our commitment to enhancing your everyday life.</p> 
+            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[12px] p-[16px] lg:p-[32px] text-center'>Join us in this journey of excellence, sustainability, and comfort. We invite you to experience the Shangsat difference - where every product and service is a testament to our commitment to enhancing your everyday life.</p> 
         </div>
         <Expertise />
 
