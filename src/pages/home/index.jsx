@@ -94,9 +94,9 @@ const Landing = () => {
                     <div className='w-[100%] lg:w-[55%] flex justify-center items-center lg:block'>
                         <img src={man} alt="" />
                     </div>
-                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[48px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[185px] md:top-[340px] lg:top-[50px] left-[5%] lg:left-[48%] lg:right-0'>
+                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[48px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[155px] md:top-[340px] lg:top-[50px] left-[5%] lg:left-[48%] lg:right-0'>
                         <p className='font-poppins text-[14px] lg:text-[16px]'>
-                            Our name comes from Shangsat CEOs paternal grandmother&apos;s name meaning &apos;lovely to talk about&apos; in the mwaghavul language in Jos, Plateau state (Mangu LGA). With &apos;Shang&apos; meaning &apos;lovely&apos; and &apos;sat&apos; meaning &apos;to talk about&apos;. <span className='hidden lg:inline'>  We are a brand that celebrates diversity, inclusivity, and the power of community.</span>
+                            Our name comes from Shangsat CEOs paternal grandmother&apos;s name meaning &apos;lovely to talk about&apos; in the Mwaghavul language in Jos, Plateau state (Mangu LGA). With &apos;Shang&apos; meaning &apos;lovely&apos; and &apos;sat&apos; meaning &apos;to talk about&apos;. <span className='hidden lg:inline'>  We are a brand that celebrates diversity, inclusivity, and the power of community.</span>
                         </p>
                         <Link to={'/about'}>
                             <div className='flex justify-start items-center gap-[16px] mt-[12px] lg:mt-[36px]'>
