@@ -21,19 +21,29 @@ const Footer = () => {
             <div className='w-[40%]'>
                 <p className="font-anton text-[16px] lg:text-[18px] text-center lg:text-left text-darkText font-[500] pb-[18px]">Quick Links</p>
                 <ul className="text-footerLink flex justify-center items-center lg:justify-between lg:items-start flex-col lg:flex-row gap-[12px]">
-                    <Link to='/'>
+                    <Link onClick={() => {
+                        window.scroll(0, 0);
+                    }} to='/'>
                         <li className='cursor-pointer'>Home</li>
                     </Link>
-                    <Link to='/about'>
+                    <Link onClick={() => {
+                        window.scroll(0, 0);
+                    }} to='/about'>
                         <li className='cursor-pointer'>About</li>
                     </Link>
-                    <Link to='/services'>
+                    <Link onClick={() => {
+                        window.scroll(0, 0);
+                    }} to='/services'>
                         <li className='cursor-pointer'>Services</li>
                     </Link>
-                    <Link to='/gallery'>
+                    <Link onClick={() => {
+                        window.scroll(0, 0);
+                    }} to='/gallery'>
                         <li className='cursor-pointer'>Gallery</li>
                     </Link>
-                    <Link to='/contact'>
+                    <Link onClick={() => {
+                        window.scroll(0, 0);
+                    }} to='/contact'>
                         <li className='cursor-pointer'>Contact</li>
                     </Link>
                 </ul>
@@ -44,7 +54,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center py-[24px] font-poppins text-footerLink gap-5 lg:gap-0 pb-[48px]">
             <p className="text-center lg:text-left">All rights reserved @ ShangsatNigeriaLtd 2023.</p>
             <div className='flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-[48px]'>
-                
+
                 <div className='flex justify-between items-center gap-[16px]'>
                     <a href="https://www.facebook.com/profile.php?id=100064006633921&mibextid=2JQ9oc" target='_blank' rel='noreferrer'><img src={meta} alt="" /></a>
                     <img src={instagram} alt="" />

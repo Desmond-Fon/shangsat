@@ -9,7 +9,7 @@ const Services = () => {
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] pb-0 lg:p-[32px] lg:pb-0 text-center'>
                 At Shangsat, our vision is to enhance your life through products and services that prioritize quality, sustainability, and your overall well-being. Whether it&apos;s the rice on your plate, the warm shower you take, the water you drink, or the space you stay in, our brand is dedicated to making every moment a cherished memory.
                 </p>
-            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[12px] p-[16px] lg:p-[32px] text-center'>Join us in this journey of excellence, sustainability, and comfort. We invite you to experience the Shangsat difference - where every product and service is a testament to our commitment to enhancing your everyday life.</p> 
+            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] p-[16px] lg:p-[32px] lg:pt-0 text-center pt-0'>Join us in this journey of excellence, sustainability, and comfort. We invite you to experience the Shangsat difference - where every product and service is a testament to our commitment to enhancing your everyday life.</p> 
         </div>
         <Expertise />
 
@@ -42,7 +42,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='background1 h-[450px] lg:h-[420px]'>
+            <div className='background3 h-[450px] lg:h-[420px]'>
                 <div className='px-[16px] py-[38px] lg:p-[80px] flex h-full justify-between items-center text-center lg:text-left lg:items-start flex-col'>
                     <div>
                         <h2 className='font-roboto text-org font-[700] text-[20px] pb-[16px]'>SHANGSAT HOMES</h2>
