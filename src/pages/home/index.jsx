@@ -1,13 +1,24 @@
 import women from '../../assets/women.png'
-import man from '../../assets/storyPic.png'
+import man from '../../assets/officel.jpeg'
 import arrow from '../../assets/arrow-right.png'
-import service1 from '../../assets/heaterServices.png'
 import service2 from '../../assets/housingService.png'
 import service3 from '../../assets/waterServices.png'
 import topBar from '../../assets/Top Bar.png'
 import playCircle from '../../assets/playCircle.png'
 import play from '../../assets/play.png'
 import whiteArrow from '../../assets/arrow-right-white.svg'
+import solar1 from '../../assets/solar1p.jpeg'
+import service1 from '../../assets/solar2p.jpeg'
+import rice1 from '../../assets/rice1l.jpeg'
+import rice2 from '../../assets/rice2l.jpeg'
+import rice3 from '../../assets/rice3p.jpeg'
+// import rice4 from '../../assets/rice4p.jpeg'
+import room1 from '../../assets/room1p.jpeg'
+// import room2 from '../../assets/room2p.jpeg'
+import room3 from '../../assets/room3p.jpeg'
+import room4 from '../../assets/room4p.jpeg'
+import img from '../../assets/storyPic.png'
+
 import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
 import Expertise from '../../components/Expertise'
@@ -30,7 +41,7 @@ const Landing = () => {
         <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
             <h1 className='font-anton text-darkText text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
             <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] pb-0 lg:p-[32px] lg:pb-0 text-center'> Welcome to Shangsat Nigeria, where quality, sustainability, and comfort come together in perfect harmony. We&apos;re a commitment to enhancing your everyday life.</p>
-            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[12px] p-[16px] lg:p-[32px] text-center'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
+            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-0 p-[16px] lg:p-[32px] lg:pt-0 text-center'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
 
             <div className='lg:hidden flex justify-center items-center p-[16px]'>
                 <a href="#community">
@@ -46,7 +57,7 @@ const Landing = () => {
                 <div className='relative h-[100%]'>
                     {playing ? <iframe width="100%" height="94%" className='rounded-b-[16px]' src="https://www.youtube.com/embed/rYx272cOHnk" aria-controls='false' title="YouTube video player"
                         allowfullscreen ref={iframeRef} autoPlay="true" /> :
-                        <img src={man} alt="" width="100%" height="100%" className='rounded-b-[16px] object-cover h-[94%]' />}
+                        <img src={img} alt="" width="100%" height="100%" className='rounded-b-[16px] object-cover h-[94%]' />}
                     <div className={`${playing ? 'hidden' : 'absolute'} top-[34%] left-[41%] md:left-[45%] lg:left-[41%] cursor-pointer`} onClick={handlePlay}>
                         <img src={playCircle} alt="" className='w-[50px] md:w-[70px] lg:w-[100%]' />
                     </div>
@@ -80,7 +91,7 @@ const Landing = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center gap-[8px] w-[100%] h-[65px] md:h-[120px] lg:h-[200px]'>
+            <div className='flex justify-between items-center gap-[8px] w-[100%] h-[75px] md:h-[120px] lg:h-[200px]'>
                 <img src={service1} alt="" className='w-[33%] h-[100%] object-[cover]' />
                 <img src={service2} alt="" className='w-[33%] h-[100%] object-[cover]' />
                 <img src={service3} alt="" className='w-[33%] h-[100%] object-[cover]' />
@@ -94,9 +105,9 @@ const Landing = () => {
             <div className='mb-[180px] px-0 lg:px-0 md:px-[52px] lg:mb-0' >
                 <div className='relative'>
                     <div className='w-[100%] lg:w-[55%] flex justify-center items-center lg:block'>
-                        <img src={man} alt="" />
+                        <img src={man} alt="" className='object-[cover] bg-red-400 rounded-[7px]'/>
                     </div>
-                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[48px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[155px] md:top-[340px] lg:top-[50px] left-[5%] lg:left-[48%] lg:right-0'>
+                    <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[44px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[145px] md:top-[300px] lg:top-[35px] left-[5%] lg:left-[48%] lg:right-0'>
                         <p className='font-poppins text-[14px] lg:text-[16px]'>
                             Our name comes from Shangsat CEOs paternal grandmother&apos;s name meaning &apos;lovely to talk about&apos; in the Mwaghavul language in Jos, Plateau state (Mangu LGA). With &apos;Shang&apos; meaning &apos;lovely&apos; and &apos;sat&apos; meaning &apos;to talk about&apos;. <span className='hidden lg:inline'>  We are a brand that celebrates diversity, inclusivity, and the power of community.</span>
                         </p>
@@ -127,38 +138,38 @@ const Landing = () => {
 
             <div className='lg:w-[60%] flex justify-center items-center mx-auto'>
                 <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
-                    <div className="grid gap-4">
+                    <div className="grid gap-5 md:gap-6">
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={room1} alt="" />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={rice1} alt="" />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div className="grid gap-4">
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={service1} alt="" />
                         </div>
                     </div>
-                    <div className="grid gap-4">
+                    <div className="grid gap-2">
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={rice2} alt="" />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={room3} alt="" />
                         </div>
                         <div>
-                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
+                            <img className="h-auto max-w-full rounded-lg" src={solar1} alt="" />
                         </div>
+                    </div>
+                    <div className="grid gap-3">
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src={rice3} alt="" />
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src={room4} alt="" />
+                        </div>
+                        {/* <div>
+                            <img className="h-auto max-w-full rounded-lg" src={rice2} alt="" />
+                        </div>  */}
                     </div>
 
                 </div>
