@@ -84,7 +84,9 @@ const Landing = () => {
                     <h1 className='font-anton text-white text-[32px] lg:text-[50px] leading-[35px] lg:pt-0 pt-[16px] lg:leading-[60px] text-center lg:text-left'>Browse through our amazing services</h1>
                     <p className='text-white font-poppins text-[16px] lg:text-[18px] py-[32px] lg:py-0 text-center lg:text-left'>At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
                     <div>
-                        <Link to={'/services'}>
+                        <Link to={'/services'} onClick={() => {
+                            window.scroll(0, 0);
+                        }}>
                             <button className='bg-secondary text-white text-[22px] px-[28px] font-[500] rounded-[8px] border-secondary border-[2px] py-[8px] font-poppins shad'>View More</button>
                         </Link>
                     </div>
@@ -111,7 +113,9 @@ const Landing = () => {
                         <p className='font-poppins text-[14px] lg:text-[16px]'>
                             Our name comes from Shangsat CEOs paternal grandmother&apos;s name meaning &apos;lovely to talk about&apos; in the Mwaghavul language in Jos, Plateau state (Mangu LGA). With &apos;Shang&apos; meaning &apos;lovely&apos; and &apos;sat&apos; meaning &apos;to talk about&apos;. <span className='hidden lg:inline'>  We are a brand that celebrates diversity, inclusivity, and the power of community.</span>
                         </p>
-                        <Link to={'/about'}>
+                        <Link to={'/about'} onClick={() => {
+                            window.scroll(0, 0);
+                        }}>
                             <div className='flex justify-start items-center gap-[16px] mt-[12px] lg:mt-[36px]'>
                                 <p className='font-roboto font-[500] text-org '>Read Full Story</p>
                                 <img src={arrow} alt="" />
@@ -130,13 +134,15 @@ const Landing = () => {
                 <h1 className='font-anton text-darkText text-[32px] lg:text-[50px] leading-[32px] lg:leading-[60px]  text-center lg:text-left'>Explore the world of Shangsat</h1>
                 <p className='text-darkText font-poppins text-[18px] py-[32px] text-center lg:text-left'>Let us take you on a visual journey through our world of excellence. Explore our photo gallery, and see for yourself the standards we uphold in every aspect of Shangsat Nigeria. From the verdant rice fields to the gleaming solar panels, the crystal-clear water bottles to the meticulously furnished apartments, we invite you to witness the beauty that is Shangsat.</p>
                 <div>
-                    <Link to={'/gallery'}>
+                    <Link to={'/gallery'} onClick={() => {
+                        window.scroll(0, 0);
+                    }}>
                         <button className='bg-primary text-white text-[22px] px-[28px] font-[500] rounded-[8px] border-primary border-[2px] py-[8px] font-poppins'>View Gallery</button>
                     </Link>
                 </div>
             </div>
 
-            <div className='lg:w-[60%] flex justify-center items-center mx-auto'>
+            <div className='lg:w-[60%] flex justify-center items-center mx-auto px-5 lg:px-0 pb-4'>
                 <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
                     <div className="grid gap-5 md:gap-6">
                         <div>

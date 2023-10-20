@@ -25,7 +25,8 @@ const Nav = () => {
 
 
     return (<div className={`px-[16px] py-[16px] bg-white lg:px-[60px] lg:py-[24px] flex justify-between items-center font-poppins sticky top-0 z-40 `}>
-        {isOpen && <div className='py-[10px] px-[24px] w-[90%] rounded-[10px] flex justify-start gap-[25px] bg-white text-darkText flex-col lg:hidden absolute activeNav top-[70px] transition-all duration-400 ease-in-out'>
+        {isOpen && <div className={`${isOpen ? "fixed bg-white top-0 right-0 w-[60%] flex-col transition-all duration-500 ease-in-out py-[10px] px-[24px] rounded-[10px] flex justify-start gap-[25px] h-[100vh] pt-[70px] text-darkText lg:hidden activeNav"
+            : "fixed left-[-100%]"} `}>
             {/* <div className='text-right flex flex-col justify-start items-end gap-1'>
                 <img src={whiteLogo} alt="" className='w-[60%] md:w-[30%]' />
                 <p className='text-white font-poppins text-[20px] font-600'>Menu</p>
