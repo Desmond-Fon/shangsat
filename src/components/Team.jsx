@@ -1,4 +1,8 @@
-import team from '../assets/team.png'
+// import team from '../assets/team.png'
+import img1 from '../assets/img1.jpeg'
+import img2 from '../assets/img2.jpeg'
+import img3 from '../assets/img3.jpeg'
+import img4 from '../assets/img4.jpeg'
 import arrow from '../assets/arrow-right.png'
 import { Link } from 'react-router-dom'
 import TeamMembers from './TeamMembers'
@@ -19,10 +23,10 @@ const Team = () => {
         </div>
 
         <div className='flex justify-center lg:justify-between flex-wrap items-center w-full gap-[24px]'>
-            <TeamMembers memberImage={team} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.'/>
-            <TeamMembers memberImage={team} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.'/>
-            <TeamMembers memberImage={team} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.' />
-            <TeamMembers memberImage={team} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.' />
+            <TeamMembers memberImage={img1} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.'/>
+            <TeamMembers memberImage={img2} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.'/>
+            <TeamMembers memberImage={img3} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.' />
+            <TeamMembers memberImage={img4} memberName='Congue velit risus' desc='Nunc gravida semper tellus neque scelerisque eget tincidunt in.' />
         </div>
     </div>);
 }

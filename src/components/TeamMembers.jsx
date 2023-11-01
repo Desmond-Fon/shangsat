@@ -3,8 +3,8 @@
 const TeamMembers = ({ memberImage, memberName, desc }) => {
   return (
     <div className="w-[250px] rounded-[5px] border-[1px] border-[#E2E8F0]">
-      <img src={memberImage} alt="" className='rounded-t-[5px]' />
-      <div className="grid place-items-left gap-[3px] text-left w-full p-[32px]">
+      <img src={memberImage} alt="" className='rounded-t-[5px] w-full h-[270px] object-fit' />
+      <div className="grid place-items-left gap-[3px] text-left w-full p-[28px]">
         <p className='font-anton text-[24px] text-darkText text-left'>{memberName}</p>
         <p className='font-poppins text-[15px] pt-[16px] text-darkText'>{desc}</p>
       </div>
