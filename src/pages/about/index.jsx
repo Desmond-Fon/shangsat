@@ -31,7 +31,7 @@ const Story = () => {
         <Expertise text={'Our Expertise'} />
 
         <Medal />
-        <Team />
+        <Team show={true} />
     </> );
 }
  
