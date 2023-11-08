@@ -64,7 +64,7 @@ const Team = ({show}) => {
 
             {show &&<div>
                 {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Staff Members</h1>}
-                <div className='flex justify-center lg:justify-center flex-wrap items-start w-full gap-[24px]'>
+                <div className='flex justify-center lg:justify-center flex-wrap items-start w-full gap-[30px]'>
                     <TeamMembers memberImage={muhammad} memberName='Muhammad Usman' desc='Legals'/>
                     <TeamMembers memberImage={bitrus} memberName='Bitrus Ndel Maki' desc='Staff'/>
                     <TeamMembers memberImage={tapkor} memberName='Tapkor Shem' desc='Staff' />
