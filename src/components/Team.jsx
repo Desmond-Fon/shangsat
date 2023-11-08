@@ -43,7 +43,7 @@ const Team = ({show}) => {
 
         <div className='flex flex-col gap-10'>
             <div>
-                {show && <h1 className='font-anton text-darkText text-[24px] lg:text-[32px]'>Board of Directors</h1>}
+                {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Board of Directors</h1>}
                 <div className='flex justify-center lg:justify-between flex-wrap items-center w-full gap-[24px]'>
                     <TeamMembers memberImage={caring} memberName='Caring Simon Gwanshak' desc='Head of Board'/>
                     <TeamMembers memberImage={umar} memberName='Simon Arduhur ' desc='Board Member'/>
@@ -53,7 +53,7 @@ const Team = ({show}) => {
             </div>
 
             {show &&<div>
-                {show && <h1 className='font-anton text-darkText text-[24px] lg:text-[32px]'>Executives</h1>}
+                {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Executives</h1>}
                 <div className='flex justify-center lg:justify-between flex-wrap items-start w-full gap-[24px]'>
                     <TeamMembers memberImage={caring} memberName='Caring Simon Gwanshak' desc='Head of Board'/>
                     <TeamMembers memberImage={umar} memberName='Bashir Rabiu Mustapha' desc='Chief Operations Officer'/>
@@ -63,7 +63,7 @@ const Team = ({show}) => {
             </div>}
 
             {show &&<div>
-                {show && <h1 className='font-anton text-darkText text-[24px] lg:text-[32px]'>Staff Members</h1>}
+                {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Staff Members</h1>}
                 <div className='flex justify-center lg:justify-center flex-wrap items-start w-full gap-[24px]'>
                     <TeamMembers memberImage={muhammad} memberName='Muhammad Usman' desc='Legals'/>
                     <TeamMembers memberImage={bitrus} memberName='Bitrus Ndel Maki' desc='Staff'/>
