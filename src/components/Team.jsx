@@ -21,6 +21,7 @@ import shebum from '../assets/shebum.jpeg'
 import solomon from '../assets/solomon.jpeg'
 import tapkor from '../assets/tapkor.jpeg'
 import wisdom from '../assets/wisdom.jpeg'
+import bashir from '../assets/bashir.jpeg'
 import arrow from '../assets/arrow-right.png'
 import { Link } from 'react-router-dom'
 import TeamMembers from './TeamMembers'
@@ -56,7 +57,7 @@ const Team = ({show}) => {
                 {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Executives</h1>}
                 <div className='flex justify-center lg:justify-between flex-wrap items-start w-full gap-[24px]'>
                     <TeamMembers memberImage={caring} memberName='Caring Simon Gwanshak' desc='Head of Board'/>
-                    <TeamMembers memberImage={umar} memberName='Bashir Rabiu Mustapha' desc='Chief Operations Officer'/>
+                    <TeamMembers memberImage={bashir} memberName='Bashir Rabiu Mustapha' desc='Chief Operations Officer'/>
                     <TeamMembers memberImage={umar} memberName='Umar Dili' desc='Head of Property, Warehousing & Logistics' />
                     <TeamMembers memberImage={shebum} memberName='Shebum Johnmark' desc='Head of Office & Export Operations' />
                 </div>
