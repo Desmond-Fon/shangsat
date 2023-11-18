@@ -36,7 +36,9 @@ const Team = ({show}) => {
         <div className='flex flex-col lg:flex-row justify-between items-center w-full'>
             <h1 className='font-anton text-darkText text-[32px] lg:text-[50px]'>Meet The Team</h1>
 
-            {!show && <Link to={'/about'}>
+            {!show && <Link to={'/about'} onClick={() => {
+                window.scroll(0, 0);
+            }}>
                 <div className='flex justify-start items-center gap-[16px] mt-[12px] lg:mt-[36px]'>
                     <p className='font-roboto font-[500] text-org '>More</p>
                     <img src={arrow} alt="" />
