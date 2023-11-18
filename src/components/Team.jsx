@@ -22,6 +22,8 @@ import solomon from '../assets/solomon.jpeg'
 import tapkor from '../assets/tapkor.jpeg'
 import wisdom from '../assets/wisdom.jpeg'
 import bashir from '../assets/bashir.jpeg'
+import naomi from '../assets/naomi.jpeg'
+import trust from '../assets/trust.jpeg'
 import arrow from '../assets/arrow-right.png'
 import { Link } from 'react-router-dom'
 import TeamMembers from './TeamMembers'
@@ -47,9 +49,9 @@ const Team = ({show}) => {
                 {show && <h1 className='font-anton text-darkText text-center lg:text-left mb-5 text-[24px] lg:text-[32px]'>Board of Directors</h1>}
                 <div className='flex justify-center lg:justify-between flex-wrap items-center w-full gap-[24px]'>
                     <TeamMembers memberImage={caring} memberName='Caring Simon Gwanshak' desc='Head of Board'/>
-                    <TeamMembers memberImage={umar} memberName='Simon Arduhur ' desc='Board Member'/>
-                    <TeamMembers memberImage={elizabeth} memberName='Naomi Simon' desc='Board Member' />
-                    <TeamMembers memberImage={sandra} memberName='Trust Simon Gwanshak' desc='Board Member' />
+                    {/* <TeamMembers memberImage={umar} memberName='Simon Arduhur ' desc='Board Member'/>  */}
+                    <TeamMembers memberImage={naomi} memberName='Naomi Simon' desc='Board Member' />
+                    <TeamMembers memberImage={trust} memberName='Trust Simon Gwanshak' desc='Board Member' />
                 </div>
             </div>
 
