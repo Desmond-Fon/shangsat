@@ -56,7 +56,7 @@ const Landing = () => {
         <div className="flex justify-center items-center">
             <div className="w-[100%] flex justify-center items-center h-[700px] lg:h-[650px]">
                 <Swiper
-                    spaceBetween={50}
+                    spaceBetween={0}
                     slidesPerView={1}
                     // virtual
                     modules={[
@@ -69,10 +69,10 @@ const Landing = () => {
                     ]}
                     // navigation
                     autoplay={{
-                        delay: 2000,
+                        delay: 5000,
                         disableOnInteraction: false,
                     }}
-                // pagination={{ clickable: true }}
+                pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 >
                     <SwiperSlide>
@@ -104,7 +104,7 @@ const Landing = () => {
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Step into a world of elegance and comfort. Explore our premium housing solutions where each detail is thoughtfully designed to ensure your dream home awaits you.</p>
                             </div>
                             <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end  lg:items-end'>
-                                <img src={slide3} alt="" className='w-[100%] mb-[-20px]' />
+                                <img src={slide3} alt="" className='w-[100%] mb-[-25px]' />
                             </div>
                         </div>
                     </SwiperSlide>
