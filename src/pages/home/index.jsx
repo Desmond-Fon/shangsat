@@ -114,7 +114,7 @@ const Landing = () => {
                                 <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Sustainable Luxury, Effortlessly</h1>
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'>Embark on a journey of sustainable luxury with our state-of-the-art solar water heaters, seamlessly designed to effortlessly elevate your living while contributing to a greener tomorrow.</p>
                             </div>
-                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end  lg:items-end'>
+                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-center  lg:items-center'>
                                 <img src={slide4} alt="" className='w-[100%] mb-[-20px]' />
                             </div>
                         </div>
