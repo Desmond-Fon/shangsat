@@ -36,6 +36,18 @@ input:focus {
   background-size: cover;
 }
 
+.orangeBg {
+  background-image: url("./assets/orangeBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.greenBg {
+  background-image: url("./assets/greenBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .background1 {
   background: linear-gradient(
       0deg,
@@ -78,7 +90,7 @@ input:focus {
       rgba(255, 102, 0, 0.3) 0%,
       rgba(255, 102, 0, 0.3) 100%
     ),
-    url("./assets/waterServices.png"), lightgray 50% / cover no-repeat;
+    url("./assets/waterr.jpeg"), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.8s;

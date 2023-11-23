@@ -2,22 +2,23 @@ import women from '../../assets/women.png'
 import man from '../../assets/officel.jpeg'
 import arrow from '../../assets/arrow-right.png'
 import service2 from '../../assets/housingService.png'
-import service3 from '../../assets/waterServices.png'
 import topBar from '../../assets/Top Bar.png'
 import playCircle from '../../assets/playCircle.png'
 import play from '../../assets/play.png'
-import whiteArrow from '../../assets/arrow-right-white.svg'
 import solar1 from '../../assets/solar1p.jpeg'
 import service1 from '../../assets/solar2p.jpeg'
 import rice1 from '../../assets/rice1l.jpeg'
 import rice2 from '../../assets/rice2l.jpeg'
 import rice3 from '../../assets/rice3p.jpeg'
-// import rice4 from '../../assets/rice4p.jpeg'
 import room1 from '../../assets/room1p.jpeg'
-// import room2 from '../../assets/room2p.jpeg'
 import room3 from '../../assets/room3p.jpeg'
 import room4 from '../../assets/room4p.jpeg'
+import waterr from '../../assets/waterr.jpeg'
 import img from '../../assets/storyPic.png'
+import slide1 from '../../assets/slide1.svg'
+import slide2 from '../../assets/slide2.svg'
+import slide3 from '../../assets/slide3.svg'
+import slide4 from '../../assets/slide4.svg'
 
 import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
@@ -25,6 +26,20 @@ import Expertise from '../../components/Expertise'
 import Medal from '../../components/Medal'
 import Team from '../../components/Team'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/virtual";
+
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+// import required modules
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Virtual } from 'swiper/modules';
 
 const Landing = () => {
     const [playing, setPlaying] = useState(false);
@@ -38,15 +53,73 @@ const Landing = () => {
     };
 
     return (<div>
-        <div className="px-[16px] pt-[48px] md:px-[24px] lg:px-[80px] lg:pt-[80px] lg:py-[70px]">
-            <h1 className='font-anton text-darkText text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px] text-center'>Welcome to Shangsat Nigeria</h1>
-            <p className='text-darkText font-poppins text-[16px] lg:text-[18px] pt-[32px] p-[16px] pb-0 lg:p-[32px] lg:pb-0 text-center'> Welcome to Shangsat Nigeria, where quality, sustainability, and comfort come together in perfect harmony. We&apos;re a commitment to enhancing your everyday life. At Shangsat Nigeria, we take pride in offering a diverse range of premium products and services designed to elevate your lifestyle. Our dedication to excellence shines through in four key pillars:</p>
-
-            <div className='lg:hidden flex justify-center items-center p-[16px]'>
-                <a href="#community">
-                    <button className='bg-secondary text-white px-[24px] font-[500] font-poppins rounded-[8px] border-secondary border-[2px] py-[8px] flex justify-center items-center gap-3'>Join The Community <img src={whiteArrow} alt="" />
-                    </button>
-                </a>
+        <div className="flex justify-center items-center">
+            <div className="w-[100%] flex justify-center items-center h-[700px] lg:h-[650px]">
+                <Swiper
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    // virtual
+                    modules={[
+                        Navigation,
+                        Pagination,
+                        Scrollbar,
+                        A11y,
+                        Virtual,
+                        Autoplay,
+                    ]}
+                    // navigation
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                // pagination={{ clickable: true }}
+                // scrollbar={{ draggable: true }}
+                >
+                    <SwiperSlide>
+                        <div className="flex greenBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                            <div className='w-full lg:w-1/2 text-left text-white'>
+                                <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]'>Welcome to Shangsat Nigeria</h1>
+                                <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Welcome to Shangsat Nigeria, where quality, sustainability, and comfort come together in perfect harmony. We&apos;re a commitment to enhancing your everyday life.</p>
+                            </div>
+                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end lg:items-end'>
+                                <img src={slide1} alt="" className='w-[100%] mb-[-20px]' />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex greenBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                            <div className='w-full lg:w-1/2 text-left text-white'>
+                                <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Premium Rice, Refined Presentation</h1>
+                                <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Indulge in culinary excellence with our premium rice selection. Each grain is meticulously chosen to elevate your dining experience, bringing exquisite flavors to your table.</p>
+                            </div>
+                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end lg:items-end'>
+                                <img src={slide2} alt="" className='w-[100%]' />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex orangeBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                            <div className='w-full lg:w-1/2 text-left text-white'>
+                                <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Your Dream Home Awaits</h1>
+                                <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Step into a world of elegance and comfort. Explore our premium housing solutions where each detail is thoughtfully designed to ensure your dream home awaits you.</p>
+                            </div>
+                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end  lg:items-end'>
+                                <img src={slide3} alt="" className='w-[100%] mb-[-20px]' />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="flex orangeBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                            <div className='w-full lg:w-1/2 text-left text-white'>
+                                <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Sustainable Luxury, Effortlessly</h1>
+                                <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'>Embark on a journey of sustainable luxury with our state-of-the-art solar water heaters, seamlessly designed to effortlessly elevate your living while contributing to a greener tomorrow.</p>
+                            </div>
+                            <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end  lg:items-end'>
+                                <img src={slide4} alt="" className='w-[100%] mb-[-20px]' />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </div>
 
@@ -95,7 +168,7 @@ const Landing = () => {
             <div className='flex justify-between items-center gap-[8px] w-[100%] h-[75px] md:h-[120px] lg:h-[200px]'>
                 <img src={service1} alt="" className='w-[33%] h-[100%] object-[cover]' />
                 <img src={service2} alt="" className='w-[33%] h-[100%] object-[cover]' />
-                <img src={service3} alt="" className='w-[33%] h-[100%] object-[cover]' />
+                <img src={waterr} alt="" className='w-[33%] h-[100%] object-[cover]' />
             </div>
         </div>
 
@@ -106,7 +179,7 @@ const Landing = () => {
             <div className='mb-[180px] px-0 lg:px-0 md:px-[52px] lg:mb-0' >
                 <div className='relative'>
                     <div className='w-[100%] lg:w-[55%] flex justify-center items-center lg:block'>
-                        <img src={man} alt="" className='object-[cover] bg-red-400 rounded-[7px]'/>
+                        <img src={man} alt="" className='object-[cover] bg-red-400 rounded-[7px]' />
                     </div>
                     <div className='px-[16px] lg:px-[48px] pt-[24px] lg:pt-[44px] pb-[24px] rounded-[5px] w-[90%] lg:w-[52%] bg-white dow absolute top-[145px] md:top-[300px] lg:top-[35px] left-[5%] lg:left-[48%] lg:right-0'>
                         <p className='font-poppins text-[14px] lg:text-[16px]'>
