@@ -146,3 +146,21 @@ input:focus {
 .activeNav {
   box-shadow: -10px 1px 30px 0px rgba(0, 0, 0, 0.5);
 }
+
+.heroHome {
+  background-image: url("./assets/homeBgg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroSolar {
+  background-image: url("./assets/solarBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroRice {
+  background-image: url("./assets/riceBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

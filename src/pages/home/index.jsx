@@ -72,50 +72,50 @@ const Landing = () => {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 >
                     <SwiperSlide>
-                        <div className="flex greenBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                        <div className="flex heroHome justify-between items-center h-[700px] lg:h-[640px] gap-0 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
                             <div className='w-full lg:w-1/2 text-left text-white'>
                                 <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]'>Welcome to Shangsat Nigeria</h1>
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Welcome to Shangsat Nigeria, where quality, sustainability, and comfort come together in perfect harmony. We&apos;re a commitment to enhancing your everyday life.</p>
                             </div>
                             <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end lg:items-end'>
-                                <img src={slide1} alt="" className='w-[100%] mb-[-20px]' />
+                                <img src={slide1} alt="" className='w-[100%] mb-[-20px] hidden' />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="flex greenBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                        <div className="flex heroRice justify-between items-center h-[700px] lg:h-[640px] gap-0 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
                             <div className='w-full lg:w-1/2 text-left text-white'>
                                 <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Premium Rice, Refined Presentation</h1>
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Indulge in culinary excellence with our premium rice selection. Each grain is meticulously chosen to elevate your dining experience, bringing exquisite flavors to your table.</p>
                             </div>
                             <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end lg:items-end'>
-                                <img src={slide2} alt="" className='w-[100%]' />
+                                <img src={slide2} alt="" className='w-[100%] hidden' />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="flex orangeBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                        <div className="flex heroHome justify-between items-center h-[700px] lg:h-[640px] gap-0 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
                             <div className='w-full lg:w-1/2 text-left text-white'>
                                 <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Your Dream Home Awaits</h1>
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'> Step into a world of elegance and comfort. Explore our premium housing solutions where each detail is thoughtfully designed to ensure your dream home awaits you.</p>
                             </div>
                             <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-end  lg:items-end'>
-                                <img src={slide3} alt="" className='w-[100%] mb-[-25px]' />
+                                <img src={slide3} alt="" className='w-[100%] mb-[-25px] hidden' />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="flex orangeBg justify-between items-center h-[700px] lg:h-[640px] gap-10 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
+                        <div className="flex heroSolar justify-between items-center h-[700px] lg:h-[640px] gap-0 w-full px-[16px] flex-col lg:flex-row lg:px-[70px] pt-[96px] lg:pt-0">
                             <div className='w-full lg:w-1/2 text-left text-white'>
                                 <h1 className='font-anton text-[40px] lg:text-[72px] leading-[44px] lg:leading-[80px]' >Sustainable Luxury, Effortlessly</h1>
                                 <p className='font-poppins text-[16px] lg:text-[18px] pt-[32px] pb-0  lg:pb-0'>Embark on a journey of sustainable luxury with our state-of-the-art solar water heaters, seamlessly designed to effortlessly elevate your living while contributing to a greener tomorrow.</p>
                             </div>
                             <div className='w-full lg:w-1/2 h-full flex justify-center lg:justify-center  lg:items-center'>
-                                <img src={slide4} alt="" className='w-[100%] mb-[-20px]' />
+                                <img src={slide4} alt="" className='w-[100%] mb-[-20px] hidden' />
                             </div>
                         </div>
                     </SwiperSlide>
