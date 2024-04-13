@@ -9,7 +9,7 @@ const Pricing = () => {
         </div>
 
         <div className="flex justify-center items-center gap-[32px] flex-col lg:flex-row pb-[30px] lg:pb-[70px]">
-            <Card pic={rice} product='Rice' item1='10kg' price1='7,500' item2='25kg' price2='17,500' item3='50kg' price3='35,000' />
+            <Card pic={rice} product='Rice' item1='10kg' price1='12,500' item2='25kg' price2='31,000' item3='50kg' price3='62,000' />
             <Card pic={water} product='Solar Water Heater' item1='150L' price1='350,500' item2='200L' price2='450,500' item3='300L' price3='650,500' />
         </div>
     </> );
